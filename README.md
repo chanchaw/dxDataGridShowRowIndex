@@ -31,11 +31,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ##### 处理后端数据 - 追加序号列
 
-![处理后端数据追加序号列](D:\Java\Document\Angular\素材\DevExtreme\显示行号\处理后端数据追加序号列.png)
+![加工后端数据显示行号](https://user-images.githubusercontent.com/29369287/60144178-0b5d7780-97f4-11e9-8fbd-5dfc692ec928.png)
 
 ##### 使用 dxDataGrid 模板功能
 
-![从 rowTemplate 获取行号](D:\Java\Document\Angular\素材\DevExtreme\显示行号\从 rowTemplate 获取行号.png)
+![从 rowTemplate 获取行号](https://user-images.githubusercontent.com/29369287/60144187-10bac200-97f4-11e9-820a-d989427b43a8.png)
 
 如果有更好的方法，希望联系我Q：409223171
 
