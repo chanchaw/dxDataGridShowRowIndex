@@ -1,0 +1,30 @@
+
+<div style="padding: 30px">
+<p>使用 template 实现显示行号 </p>
+<p>该方法不影响从后端接受到的数据，同样的有缺点</p>
+<p>貌似和该组件（DevExtreme - dxDataGrid）的带有复选框效果的多选功能冲突</p>
+<p>哪个同学可以解决这个问题麻烦联系我Q:409223171，加好友或者邮件都可以。</p>
+
+<dx-data-grid id="gridContainer"
+    [dataSource]="tableData"
+    keyExpr="sid"
+    [columnAutoWidth]="true"
+    [showBorders]="true"
+    [focusedRowEnabled]="true"
+    rowTemplate="rowTemplateName">
+
+    <dxi-column caption="序号"></dxi-column>
+    <dxi-column *ngFor="let col of colStyle" dataField="{{ col.dataField }}" 
+        caption="{{ col.caption }}"></dxi-column>
+
+    <tbody class="employee dx-row" *dxTemplate="let item of 'rowTemplateName'" >
+        <tr class="main-row">
+            <td>{{ item.rowIndex + 1 }}</td>
+            <td *ngFor="let col of colStyle">
+                {{ item.data[col.dataField]}} 
+            </td>
+        </tr>
+    </tbody>
+</dx-data-grid>
+
+</div>

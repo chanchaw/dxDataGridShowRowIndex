@@ -1,0 +1,21 @@
+
+<div style="padding: 30px">
+    <p>通过加工后端传输来的数据来显示行号 </p>
+    <p>原本后端获取到的数据中只有两个字段：sid,name;依次表示编号和名称</p>
+    <p>但是在前端创建的 Model 中特意多加了一个属性：rowIndex</p>
+    <p>这样在从后端获取到数据后遍历填充该行号即可，好处是兼容原版的多选功能</p>
+        
+    <dx-data-grid id="gridContainer"
+        [dataSource]="tableData"
+        keyExpr="sid"
+        [columnAutoWidth]="true"
+        [showBorders]="true"
+        [focusedRowEnabled]="true">
+
+        <dxi-column dataField="rowIndex" caption="序号"></dxi-column>
+        <dxi-column *ngFor="let col of colStyle" dataField="{{ col.dataField }}" 
+            caption="{{ col.caption }}"></dxi-column>
+
+    </dx-data-grid>
+
+</div>

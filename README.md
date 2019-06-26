@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+##### 自己琢磨的两种方法，希望能抛砖引玉有人贴出更好的实现方法
+
+##### 处理后端数据 - 追加序号列
+
+![处理后端数据追加序号列](D:\Java\Document\Angular\素材\DevExtreme\显示行号\处理后端数据追加序号列.png)
+
+##### 使用 dxDataGrid 模板功能
+
+![从 rowTemplate 获取行号](D:\Java\Document\Angular\素材\DevExtreme\显示行号\从 rowTemplate 获取行号.png)
+
+如果有更好的方法，希望联系我Q：409223171
+
+邮箱：409223171@qq.com
